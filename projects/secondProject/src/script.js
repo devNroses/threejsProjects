@@ -6,9 +6,8 @@ const geometry = new THREE.BoxGeometry(1, 1, 1)
 const material = new THREE.MeshBasicMaterial({ color: 'red'});
 const mesh = new THREE.Mesh(geometry, material);
 
-mesh.position.x = 0.95;
-mesh.position.y = .59;
-mesh.position.z = -.5;
+// Setting position of x, y, z with position.set
+mesh.position.set(0.95, .59, -.5);
 
 console.log("mesh lenght: ", mesh.position.length());
 
